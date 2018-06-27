@@ -1,10 +1,9 @@
 @import globals
 @import sizing
-@import chili
+//@import chili
 
 .battlePanel
 	$panelRightWidth: 25em
-	+chiliBorder
 	position: relative
 	> *
 		+setHeight(100%)
@@ -14,8 +13,26 @@
 		// different, and differently is Chrome and Firefox. This mystery needs
 		// to be solved.
 		font-size: small
+		
+	button
+		border-radius: 5px 5px 5px 5px;
+		border-top: 1px solid #5a5a5a;
+		border-left: 1px solid #5a5a5a;
+		border-right: 1px solid #5a5a5a;
+		border-bottom: 1px solid #5a5a5a;
+		background-color: #1f1f1f;
+		&:hover
+			background-color: #147D80;
+	
 	> button, > button:disabled
-		+chili3dBox
+		
+		border-radius: 5px 5px 5px 5px;
+		border-top: 1px solid #5a5a5a;
+		border-left: 1px solid #5a5a5a;
+		border-right: 1px solid #5a5a5a;
+		border-bottom: 1px solid #5a5a5a;
+		background-color: #1f1f1f;
+		
 		width: calc(100% - #{$panelRightWidth})
 		height: 100%
 		color: white
@@ -28,13 +45,13 @@
 		ul
 			text-align: left
 		&.play
-			background-color: #82EE82
+			background-color: #0d8800
 		&.unsynced
-			background-color: #EE8282
+			background-color: #880000
 		&.running
-			background-color: #FFFF81
+			background-color: #006088
 		&.spectate
-			background-color: #82EAEE
+			background-color: #006088
 	.panelRight
 		width: $panelRightWidth
 		padding: 0.6em
@@ -45,7 +62,7 @@
 				font-size: 1.1em
 		.engineName
 			margin-bottom: 1.3em
-			color: #776
+			color: #fafafa
 			span
 				font-size: 0.85em
 		.gameName, .engineName

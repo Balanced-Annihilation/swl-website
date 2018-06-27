@@ -1,8 +1,8 @@
-@import chili
+//@import chili
 
 .chatLog
-	+chili3dBox
-	overflow: auto
+	
+	overflow-x: hidden
 	padding: 0.2em
 	margin: 0
 	hr
@@ -10,20 +10,24 @@
 		border-color: #525246
 
 .chatEntry
+	margin-top: 5px
+	padding-top: 5px
+	padding-bottom: 5px
+	background-color: rgba(0, 0, 0, 0.65)
 	font-family: 'DejaVu Sans', sans-serif
+	word-break: break-all
 	> div
 		display: table-cell
 		padding: 0.1em 0.4em
 	.chatTimestamp
 		font-size: 0.8em
-		color: #887
+		color: #fafafa
 		white-space: nowrap
 	.chatAuthor
 		color: #17afb8
 		min-width: 8em
 		text-align: right
 	.chatMessage
-		word-wrap: break-word
 		white-space: pre-wrap
 	.chatSlashMe
 		color: #B88917

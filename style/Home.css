@@ -1,0 +1,292 @@
+.appContent {
+  background-image: url("http://i.imgur.com/5HBCXcf.jpg");
+  background-color: #999;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  /* background-image: url("http://i.imgur.com/hK0gzLS.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /*--------------------------------------------------------------
+   2.0 Typography
+   --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+   3.0 Responsive Grid
+   --------------------------------------------------------------*/
+  /* Using responsive Grid System for the sake of speed and simplicity */
+  /*  SECTIONS  */
+  /*  COLUMN SETUP  */
+  /*  GROUPING  */
+  /* For IE 6/7 */
+  /*  GRID OF TWO  */
+  /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+  /* Not sure if I'll ever need three columns, but nice to have the option) */
+  /*  GRID OF THREE  */
+  /*  GO FULL WIDTH BELOW 480 PIXELS */
+}
+.container .homeScreen {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+.container .menubutton {
+  cursor: pointer;
+}
+.container .menubutton > a {
+  color: white;
+}
+.container .logoimage {
+  margin-bottom: 20px;
+}
+.container img {
+  max-width: 100%;
+}
+.container .aligncentertext {
+  text-align: center;
+}
+.container .aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .menubutton {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+  -webkit-transition: all 0.2 ease-in-out;
+  -moz-transition: all 0.2 ease-in-out;
+  -ms-transition: all 0.2 ease-in-out;
+  -o-transition: all 0.2 ease-in-out;
+  transition: all 0.2 ease-in-out;
+}
+.container .menubutton:hover {
+  color: #427fed;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+.container .menubutton:active {
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 20px rgba(136, 136, 136, 1);
+  cursor: pointer;
+}
+.container .displayblock {
+  display: block;
+}
+.container .entry {
+  padding: 20px;
+  max-height: 650px;
+  overflow-y: auto;
+}
+.container .entry iframe {
+  border: 0px solid #000;
+  border-radius: 5px;
+}
+.container .entry-background {
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+.container a {
+  text-decoration: none;
+}
+.container a {
+  color: #427fed;
+}
+.container a:visited {
+  color: #fff;
+}
+.container a:hover, .container a:focus, .container a:active {
+  color: #427fed;
+}
+.container body, .container button, .container input, .container select, .container textarea {
+  color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+  font-family: "Lato", "Arial", sans-serif;
+}
+.container h1 {
+  font-size: 2em;
+  /* = 42px */
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-weight: normal;
+}
+.container h1.underline-title {
+  font-size: 2em;
+  /* = 42px */
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-weight: normal;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+.container h2 {
+  font-size: 1.5em;
+  /* = 36px */
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  font-weight: normal;
+}
+.container h2.underline-title {
+  font-size: 1.5em;
+  /* = 36px */
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  font-weight: normal;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+.container h3 {
+  font-size: 1.35em;
+  /* = 30px */
+  margin-bottom: 0.857em;
+  margin-top: 0.857em;
+  font-weight: normal;
+}
+.container h4 {
+  font-size: 1.25em;
+  /* = 24px */
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: normal;
+}
+.container h5 {
+  font-size: 1.2em;
+  /* = 18px */
+  margin-bottom: 1.125em;
+  margin-top: 1.125em;
+  font-weight: normal;
+}
+.container h6 {
+  font-size: 1.1em;
+  /* = 16px */
+  margin-bottom: 1.285em;
+  margin-top: 1.285em;
+  font-weight: normal;
+}
+.container p {
+  margin-bottom: 1.5em;
+}
+.container b, .container strong {
+  font-weight: bold;
+}
+.container dfn, .container cite, .container em, .container i {
+  font-style: italic;
+}
+.container blockquote {
+  margin: 0 1.5em;
+}
+.container address {
+  margin: 0 0 1.5em;
+}
+.container pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+.container code, .container kbd, .container tt, .container var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+.container abbr, .container acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+.container mark, .container ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+.container sup, .container sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.container sup {
+  bottom: 1ex;
+}
+.container sub {
+  top: 0.5ex;
+}
+.container small {
+  font-size: 75%;
+}
+.container big {
+  font-size: 125%;
+}
+.container .section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+.container .col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.container .col:first-child {
+  margin-left: 0;
+}
+.container .group:before, .container .group:after {
+  content: "";
+  display: table;
+}
+.container .group:after {
+  clear: both;
+}
+.container .group {
+  zoom: 1;
+}
+.container .span_2_of_2 {
+  width: 100%;
+}
+.container .span_1_of_2 {
+  width: 49.2%;
+}
+@media only screen and (max-width: 480px) {
+  .container .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container .span_2_of_2, .container .span_1_of_2 {
+    width: 100%;
+  }
+}
+.container .span_3_of_3 {
+  width: 100%;
+}
+.container .span_2_of_3 {
+  width: 66.13%;
+}
+.container .span_1_of_3 {
+  width: 32.26%;
+}
+@media only screen and (max-width: 800px) {
+  .container .col {
+    margin: 1% 0 1% 0%;
+  }
+  .container .span_3_of_3, .container .span_2_of_3, .container .span_1_of_3 {
+    width: 100%;
+  }
+}

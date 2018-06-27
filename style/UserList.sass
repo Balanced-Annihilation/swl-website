@@ -1,10 +1,10 @@
 @import globals
-@import chili
+//@import chili
 
 .userList
 	$headerHeight: 2.4em
-	+chiliBorder
-	background-color: #171717
+	
+	background-color: rgba(0, 0, 0, 0.5);
 	padding-bottom: 5px
 	.listHeader
 		height: $headerHeight
@@ -27,7 +27,7 @@
 		height: calc(100% - #{$headerHeight})
 	li, .listHeader
 		padding: $userItemPadding
-		border-bottom: 1px solid #444
+		/* border-bottom: 1px solid #444 */
 		position: relative
 	.listTeam
 		text-align: center
@@ -39,10 +39,10 @@
 			font-size: 1.16em
 
 .listTip
-	color: #776
+	color: #fafafa
 	font-weight: normal
 
 .listHeaderButtons, .listTeamButtons, .listItemButtons
 	button
-		+tinyButton
+		//+tinyButton
 		margin-left: 0.6em

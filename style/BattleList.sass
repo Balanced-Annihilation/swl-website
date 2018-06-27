@@ -1,15 +1,18 @@
 @import globals
-@import chili
+//@import chili
 @import sizing
 
 // Style
 .battleList
 	.tableWrapper
-		+chili3dBox
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 0px 0px 0px 5px;
+		tbody
+			background-color: rgba(0, 0, 0, 0.5);
 	table
 		border-collapse: collapse
 	th, td
-		border: 1px solid #444
+		/* border: 1px solid #444 */
 	th
 		font-size: 1.2em
 		text-align: center
@@ -50,7 +53,9 @@
 		.queueSelector
 			width: 25px
 	.infoBox
-		+chili3dBox
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 0px 5px 5px 0px;
+		border-left: 1px solid rgba(0, 0, 0, 0.5);
 		padding: 1em
 		overflow: auto
 		img.thumbnail
@@ -71,6 +76,10 @@
 			margin-top: 1.5em
 			margin-left: -0.8em
 			margin-right: -0.8em
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 5px 5px 0px 0px;
+			.listHeader
+				border-radius: 5px 5px 0px 0px;
 		button
 			margin: 0.8em auto 0 auto
 			display: block
@@ -87,11 +96,8 @@
 		margin: 0.5em 0 0.5em 1.5em
 	.filterBox
 		position: relative
-		left: 2px
-		top: 3px
-		border-top: 1px solid #444
-		border-left: 1px solid #444
-		border-top-left-radius: 8px
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 5px 0px 0px 0px;
 		padding: 0.8em
 		label
 			display: inline-block
@@ -113,7 +119,7 @@
 // Layout
 .battleList
 	$infoWidth: 17em
-	height: 100%
+	height: 99%
 	> *
 		+setHeight(100%)
 		float: left

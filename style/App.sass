@@ -1,6 +1,6 @@
 @import globals
 @import sizing
-@import chili
+//@import chili
 
 $navHeight: 4.0em
 $navBottomMargin: 1.2em
@@ -39,7 +39,7 @@ $navBottomMargin: 1.2em
 		.close
 			color: #E4E4E4
 	> span.selected
-		background-color: #6b0000
+		background-color: #147D80
 	> span.closable
 		padding-right: 1.2em
 	:not(.selected) .attention
@@ -71,6 +71,8 @@ $downloadBarTransitionDuration: 200ms
 	+setHeight(calc(100% - #{$navHeight} - #{$navBottomMargin}))
 
 .appContent
+	padding-left: 1em
+	padding-right: 1em
 	height: 100%
 	.downloadList
 		position: absolute
